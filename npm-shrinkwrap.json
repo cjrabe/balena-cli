@@ -2605,6 +2605,17 @@
         "balena-settings-storage": "^6.0.0",
         "jwt-decode": "^2.2.0",
         "tslib": "^2.0.0"
+      },
+      "dependencies": {
+        "balena-settings-storage": {
+          "version": "6.0.1",
+          "resolved": "https://registry.npmjs.org/balena-settings-storage/-/balena-settings-storage-6.0.1.tgz",
+          "integrity": "sha512-jdDoKzbJXlF696EZSbwD6lZ1dMe98aUtx7btFE4j4PRCSeh2BWx5P5VLGh9Bk3sH2FUcqYg0iw/wdKvkcv44oA==",
+          "requires": {
+            "@types/node": "^10.17.26",
+            "tslib": "^2.0.0"
+          }
+        }
       }
     },
     "balena-config-json": {
@@ -2633,9 +2644,9 @@
       }
     },
     "balena-errors": {
-      "version": "4.4.1",
-      "resolved": "https://registry.npmjs.org/balena-errors/-/balena-errors-4.4.1.tgz",
-      "integrity": "sha512-912lPp1LyBjkpxRg6m/EpOCssqMhgkzyYbrKwtT2uRvixm89WOlJrj5sPkxnbPnp5IoMNaoRONxFt1jtiQf50Q==",
+      "version": "4.7.1",
+      "resolved": "https://registry.npmjs.org/balena-errors/-/balena-errors-4.7.1.tgz",
+      "integrity": "sha512-g21kf6N5tMZYDietZNLHCbqhmAxPX9gRmJQgMuIjMZWvjzCQxcqaELNYTtDwXwEbXLhbhF6QV2IJDZul+5X6nQ==",
       "requires": {
         "tslib": "^2.0.0",
         "typed-error": "^3.0.0"
@@ -2842,11 +2853,12 @@
       }
     },
     "balena-settings-storage": {
-      "version": "6.0.1",
-      "resolved": "https://registry.npmjs.org/balena-settings-storage/-/balena-settings-storage-6.0.1.tgz",
-      "integrity": "sha512-jdDoKzbJXlF696EZSbwD6lZ1dMe98aUtx7btFE4j4PRCSeh2BWx5P5VLGh9Bk3sH2FUcqYg0iw/wdKvkcv44oA==",
+      "version": "7.0.0",
+      "resolved": "https://registry.npmjs.org/balena-settings-storage/-/balena-settings-storage-7.0.0.tgz",
+      "integrity": "sha512-gufzVJznyt9e1CvpBuLe2caU5KcEwl1YHCbK5OMz09zXDA2OMAICPXsLlViK+KiuZwZrBx3tyU2FZjAzRZFgwQ==",
       "requires": {
         "@types/node": "^10.17.26",
+        "balena-errors": "^4.7.1",
         "tslib": "^2.0.0"
       }
     },

@@ -122,6 +122,22 @@ const messages: {
 
 	EACCES: (e) => messages.EPERM(e),
 
+	BalenaSettingsPermissionError: () => stripIndent`
+		You don't have sufficient privileges to access balena settings.
+
+		Balena stores the session token in ${
+			os.platform() === 'win32' ? 'C:\\Users\\<user>\\_balena' : '$HOME/.balena'
+		}.
+		This error usually indicates that the user doesn't have permissions over that directory,
+		which can happen if balena was executed as the root user.
+
+		${
+			os.platform() === 'win32'
+				? 'Try resetting the ownership by opening a new Command Prompt as administrator and running: `takeown /f %USERPROFILE%\\_balena /r`'
+				: 'Try resetting the ownership by running: `sudo chown -R $(whoami) $HOME/.balena`'
+		}
+	`,
+
 	ETIMEDOUT: () =>
 		'Oops something went wrong, please check your connection and try again.',
 
