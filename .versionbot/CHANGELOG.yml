@@ -1,4 +1,35 @@
 - commits:
+    - subject: 'docs: Add references to the masterclasses in the CLI help and README'
+      hash: dd6fa471b0cd51a3e41cd58d8423858b2d6aef1b
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Paulo Castro
+      nested: []
+    - subject: >-
+        Fix debug message logic (don't suggest --debug if it is already being
+        used)
+      hash: c69c031aa46d75331d680621527d8996558d80b0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Paulo Castro
+      nested: []
+    - subject: Fix unhandled promise rejection when ~/.balena is not accessible
+      hash: 48ff3e68c108e1d73099787520128fd4995c0bf0
+      body: ''
+      footer:
+        Resolves: '#2096'
+        resolves: '#2096'
+        Change-type: patch
+        change-type: patch
+      author: Paulo Castro
+      nested: []
+  version: 12.28.1
+  date: 2020-11-19T18:17:48.733Z
+- commits:
     - subject: 'push: Reduce memory usage when filtering files with dockerignore'
       hash: 4768f763856aa9f761988477f97ec872d226b004
       body: ''
